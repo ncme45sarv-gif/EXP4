@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #25233a;
+    background: #f6f4ff;
+}
+
+header {
+    background: #211b35;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c4b5fd;
+    text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #fbbf24;
+    outline-offset: 4px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.hero {
+    background: #ddd3ff;
+    padding: 65px 25px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: clamp(30px, 5vw, 46px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.button,
+button {
+    display: inline-block;
+    background: #5934b5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background: #42258e;
+}
+
+section:not(.hero) {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #5934b5;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+article {
+    padding: 20px;
+    background: #f0ebff;
+    border-radius: 10px;
+}
+
+#contactMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background: #211b35;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    section:not(.hero) {
+        padding: 22px;
+    }
+}

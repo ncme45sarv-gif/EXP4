@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Learn about web development, accessible design, HTML, CSS, and modern website creation.">
+
+    <meta name="keywords"
+          content="web development, HTML, CSS, accessibility, SEO">
+
+    <meta name="author" content="Your Name">
+
+    <title>Web Development Guide | Learn HTML and CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="#home">WebDev Guide</a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+
+        <section class="hero" aria-labelledby="main-heading">
+            <h1 id="main-heading">
+                Learn Modern Web Development
+            </h1>
+
+            <p>
+                Discover HTML, CSS, accessibility, and SEO
+                to create better websites.
+            </p>
+
+            <a class="button" href="#about">
+                Explore More
+            </a>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Web Development</h2>
+
+            <p>
+                Web development involves creating websites using
+                technologies such as HTML, CSS, and JavaScript.
+                A good website should be useful, accessible,
+                responsive, and easy to understand.
+            </p>
+        </section>
+
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">What You Will Learn</h2>
+
+            <div class="services">
+
+                <article>
+                    <h3>HTML</h3>
+                    <p>
+                        HTML provides the structure and content
+                        of a webpage.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>CSS</h3>
+                    <p>
+                        CSS controls the appearance and layout
+                        of a webpage.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Accessibility and SEO</h3>
+                    <p>
+                        Accessibility improves usability, while
+                        SEO helps search engines understand content.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+
+            <p>
+                Select the button below to display a contact message.
+            </p>
+
+            <button id="contactButton" type="button">
+                Show Contact Information
+            </button>
+
+            <p id="contactMessage" aria-live="polite"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WebDev Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
